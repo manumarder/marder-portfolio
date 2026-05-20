@@ -12,7 +12,7 @@ export default function Home() {
         
         <div className="animate-fade-in-up">
           <span className="text-xs font-semibold tracking-widest text-emerald-600 uppercase mb-3 block">
-            Licenciatura en Sistemas &bull; UNNE
+            Licenciatura en Sistemas de Información &bull; UNNE
           </span>
           
           {/* Título principal con tipografía fina y de gran impacto */}
@@ -21,7 +21,7 @@ export default function Home() {
           </h1>
           
           <h2 className="text-xl md:text-2xl font-normal text-slate-500 max-w-2xl leading-relaxed mb-8">
-            <span className="text-slate-900 font-medium border-b-2 border-emerald-500/30 pb-0.5">Data Engineer</span> en el sector estadístico provincial y desarrolladora apasionada por las interfaces interactivas y funcionales.
+            <span className="text-slate-900 font-medium border-b-2 border-emerald-500/30 pb-0.5">Data Engineer</span> en el sector estadístico provincial e Instituto de Modernización e Innovación (IMI) Corrientes, especializada en la optimización de flujos de datos y apasionada por el desarrollo de interfaces modernas.
           </h2>
           
           <div className="flex gap-4">
@@ -52,15 +52,14 @@ export default function Home() {
             <h4 className="text-2xl font-normal text-slate-900">¿Cómo llegué hasta acá?</h4>
           </div>
           
-          <div className="md:col-span-2 space-y-5 text-slate-600 text-base leading-relaxed">
+          <div className="md:col-span-2 space-y-6 text-slate-600 text-base leading-relaxed font-light">
             <p>
-              Mi camino en la tecnología comenzó en las aulas de la <span className="text-slate-900 font-medium">Universidad Nacional del Nordeste (UNNE)</span>, donde actualmente curso el quinto año de la Licenciatura en Sistemas. La curiosidad por entender cómo el software modela el mundo real me llevó a profundizar en la lógica y la arquitectura.
+              Mi fascinación por la tecnología cobró un rumbo definitivo gracias a un regalo: un curso básico de Python en Udemy. Lo que empezó como curiosidad por las funciones y los gráficos se convirtió en mi profesión. Ese impulso inicial me permitió ingresar en marzo de 2024 al entonces IPECD, hoy consolidado como el <span className="text-slate-950 font-medium">IMI (Instituto de Modernización e Innovación)</span> provincial.            </p>
+            <p>
+              Comencé mi camino con una pasantía de tres meses que marcó mi rigurosidad técnica. Rodeada de profesionales como Gastón y Matías, absorbí las buenas prácticas de la industria: el control de versiones con Git, entornos virtuales y las bases del Web Scraping. Desde allí, escalé hacia la optimización de bases de datos relacionales, la automatización de extracciones críticas y el despliegue de arquitecturas robustas que hoy corren bajo Apache Airflow.
             </p>
             <p>
-              Hace ya dos años me sumé al <span className="text-slate-900 font-medium">Instituto Provincial de Estadística y Ciencia de Datos (IPECD)</span> como Ingeniera de Datos. Esta experiencia transformó mi perfil: pasé de la teoría académica al diseño de pipelines de datos masivos (ETL), automatización con Python y optimización de bases de datos gubernamentales críticas.
-            </p>
-            <p>
-              Sin embargo, entiendo que los datos no sirven de nada si no se pueden interpretar. Por eso combiné mi base analítica con el desarrollo frontend, especializándome en <span className="text-slate-900 font-medium">Next.js y Tailwind CSS</span> para crear dashboards claros, intuitivos y con un diseño UI delicado pero impactante.
+              Soy detallista y perfeccionista con los flujos de información, pero entendí que los datos cobran valor real cuando son accesibles. Con la infraestructura del Instituto ya consolidada, decidí dar el salto hacia el <span className="text-slate-950 font-medium">Desarrollo Full-Stack</span>. Comencé codiseñando tableros interactivos que consumían nuestras APIs, y hoy lidero el diseño e implementación de sistemas integrales de punta a punta, uniendo la ingeniería de datos con interfaces limpias, delicadas y funcionales.
             </p>
           </div>
         </div>
@@ -111,6 +110,10 @@ export default function Home() {
             </h3>
             <h4 className="text-3xl font-light text-slate-950 mb-2">Proyectos Destacados</h4>
             <p className="text-sm text-slate-500">Soluciones analíticas y visuales diseñadas para resolver problemas reales.</p>
+            <p className="text-sm text-slate-500 max-w-xl">
+              Desde la arquitectura de datos (Backend) hasta la creación de interfaces (Frontend), 
+              busco que la información compleja se convierta en una herramienta visualmente <span className="text-emerald-600 font-medium">armoniosa y funcional</span>.
+            </p>
           </div>
 
           {/* Grilla estilizada para las tarjetas */}
@@ -124,7 +127,7 @@ export default function Home() {
 
       {/* Footer minimalista */}
       <footer className="max-w-4xl mx-auto px-6 py-12 text-center text-xs text-slate-400 font-light">
-        &copy; {new Date().getFullYear()} Manuela Marder &bull; Diseñado con un enfoque minimalista usando Next.js y Tailwind CSS.
+        &copy; {new Date().getFullYear()}  Manuela Marder &bull; Diseñado con un enfoque minimalista usando Next.js y Tailwind CSS.
       </footer>
     </div>
   );
