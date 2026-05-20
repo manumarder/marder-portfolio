@@ -14,11 +14,11 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     id: 'salud-infantil',
-    title: 'Sistema Integral y Dashboard de Control de Salud',
-    subtitle: 'Ministerio de Salud Provincial',
-    description: 'Mi proyecto actual más ambicioso, desarrollado de punta a punta (Full-Stack). Diseñado específicamente para dar batalla a la mortalidad infantil a través del seguimiento riguroso de controles en embarazadas de Corrientes.',
-    impact: 'Permite a los centros de salud organizar turnos, detectar alertas tempranas de pacientes ausentes y coordinar la búsqueda activa de las madres en el territorio.',
-    tags: ['Next.js', 'React', 'Tailwind CSS', 'Diseño UI/UX', 'Backend Integrado'],
+    title: 'Sistema Integral y Dashboard de Control de Salud (SegEm)',
+    subtitle: 'Ministerio de Salud / IMI Corrientes',
+    description: 'Plataforma centralizada y segura desarrollada de punta a punta (Full-Stack) para el seguimiento clínico de embarazadas en entornos de alto riesgo, orientada a la organización de centros de salud.',
+    impact: 'Automatiza el listado de seguimiento, emite alertas automáticas ante ausencias de controles (+30 días) y optimiza la búsqueda activa territorial de las madres.',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Diseño UI/UX', 'Python (ETL)'],
     category: 'fullstack',
     images: [
       '/images/projects/salud/salud-1.png',
@@ -34,9 +34,9 @@ export const projectsData: Project[] = [
     id: 'tableros-estadisticos',
     title: 'Visualización de Indicadores Sociodemográficos',
     subtitle: 'IMI Corrientes (ex IPECD)',
-    description: `Desarrollo de una landing page interactiva para la visualización de datos de las encuestas EPH, ECV y registros de Salud, Educación y Transporte. Implementación centrada en el consumo dinámico de APIs y el refinamiento estético de tableros complejos.`,
-    impact: 'Logramos centralizar indicadores clave de la provincia en un punto único, transformando reportes técnicos en una experiencia visual armoniosa y fácil de navegar para el ciudadano y el analista.',
-    tags: ['Next.js', 'API Integration', 'Data Visualization', 'Interdisciplinary Team', 'Tailwind CSS'],
+    description: `Desarrollo e implementación de la interfaz para la consulta dinámica de datos de las encuestas EPH, ECV y registros de Salud, Educación y Transporte, consumidos vía APIs.`,
+    impact: 'Diseñado en colaboración interdisciplinaria para transformar matrices de datos complejas en gráficos de líneas y tablas interactivas con armonía visual y fluidez de uso.',
+    tags: ['Next.js', 'API Integration', 'Data Visualization', 'Estilos UI'],
     category: 'frontend',
     images: [
       '/images/projects/sociodemografico/sociod-1.png',
@@ -52,10 +52,19 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    id: 'pipeline-etl',
+    id: 'ficha-tesis',
+    title: 'Fichá: Auditoría de Precios con Agentes de IA y Arquitectura Medallion',
+    subtitle: 'Proyecto de Tesis de Grado - UNNE',
+    description: `Plataforma web integral de ingeniería de datos orientada a mitigar la asimetría de información en el mercado retail de Corrientes Capital. El sistema implementa un pipeline robusto de datos para auditar la veracidad de ofertas y optimizar el consumo local.`,
+    impact: `Procesa y audita de forma diaria el comportamiento de precios en cadenas clave (Carrefour, Depot, Deli Mart y Día). Utiliza la metodología Design Science Research (DSR) y un pipeline estructurado en capas (Bronce, Plata, Oro) para garantizar la trazabilidad y reproducibilidad del flujo de información.`,
+    tags: ['Python (Selenium)', 'PostgreSQL', 'Model Context Protocol (MCP)', 'Arquitectura Medallion', 'FastAPI'],
+    category: 'fullstack' // Lo pasamos a fullstack porque tu tesis cubre desde el raspado hasta la UI
+  },
+  {
+    id: 'pipeline-etl-institucional',
     title: 'Arquitectura de Automatización y Web Scraping',
-    subtitle: 'Infraestructura IPECD',
-    description: 'Diseño e implementación del pipeline de extracción, transformación y carga (ETL) de datos de diversas fuentes públicas y comerciales usando Python y Selenium.',
+    subtitle: 'Infraestructura de Datos IPECD - IMI',
+    description: 'Diseño, implementación y mantenimiento del pipeline de extracción, transformación y carga (ETL) de datos diversos. Centraliza flujos de ingesta de datos tanto manuales como scripts automáticos programados.',
     impact: 'Consolidación de la arquitectura de datos institucional, actualmente orquestada de manera eficiente mediante Apache Airflow.',
     tags: ['Python', 'Selenium', 'PostgreSQL', 'Apache Airflow', 'ETL'],
     category: 'data'
