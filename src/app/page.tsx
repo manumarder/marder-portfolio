@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { projectsData } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
 
@@ -19,19 +20,18 @@ export default function Home() {
       
       {/* 1. SECCIÓN DE BIENVENIDA (IMPACTO VISUAL LIMPIO) */}
       <header className="relative max-w-4xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-28">
-        <div className="absolute top-20 left-4 w-24 h-24 bg-emerald-504/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-20 left-4 w-24 h-24 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
         
         <div className="animate-fade-in-up flex flex-col md:flex-row md:items-start md:gap-10">
           
-          {/* Foto circular */}
-          <div className="mb-6 md:mb-0 md:mt-2 flex-shrink-0">
-            <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-slate-100 shadow-md">
-              <img
-                src="/foto1.jpeg"
-                alt="Manuela Marder"
-                className="w-full h-full object-cover object-[15%_25%] scale-195"
-              />
-            </div>
+        <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-slate-100 shadow-md relative">
+            <Image
+              src="/foto1.jpeg"
+              alt="Manuela Marder"
+              fill
+              className="object-cover object-[15%_25%] scale-195"
+              priority
+            />
           </div>
 
           {/* Texto */}
@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
             <p className="text-xs text-slate-400 mb-4">Corrientes, Argentina</p>
             <h2 className="text-xl md:text-2xl font-normal text-slate-500 max-w-2xl leading-relaxed mb-8">
-              <span className="text-slate-900 font-medium border-b-2 border-emerald-500/30 pb-0.5">Data Engineer</span> en el sector estadístico provincial e Instituto de Modernización e Innovación (IMI) Corrientes, especializada en la optimización de flujos de datos y apasionada por el desarrollo de interfaces modernas.
+              <span className="text-slate-900 font-medium border-b-2 border-emerald-500/30 pb-0.5">Data Engineer</span> en el Instituto de Modernización e Innovación (IMI) Corrientes —área de estadísticas y ciencia de datos—, especializada en la optimización de flujos críticos y apasionada por el desarrollo de interfaces modernas.
             </h2>
             <div className="flex gap-4">
               <a href="#sobre-mi" className="px-5 py-2.5 bg-slate-950 text-white text-sm font-medium rounded-full hover:bg-emerald-700 transition-all duration-300 shadow-sm">Conoceme más</a>
@@ -123,10 +123,8 @@ export default function Home() {
               Portafolio
             </h3>
             <h4 className="text-3xl font-light text-slate-950 mb-2">Proyectos Destacados</h4>
-            <p className="text-sm text-slate-500">Soluciones analíticas y visuales diseñadas para resolver problemas reales.</p>
-            <p className="text-sm text-slate-500 max-w-xl">
-              Desde la arquitectura de datos (Backend) hasta la creación de interfaces (Frontend), 
-              busco que la información compleja se convierta en una herramienta visualmente <span className="text-emerald-600 font-medium">armoniosa y funcional</span>.
+            <p className="text-sm text-slate-500 max-w-xl leading-relaxed">
+              Soluciones analíticas y visuales diseñadas para resolver problemas reales. Desde la arquitectura de datos (Backend) hasta la creación de interfaces (Frontend), busco que la información compleja se convierta en una herramienta visualmente <span className="text-emerald-600 font-medium">armoniosa y funcional</span>.
             </p>
           </div>
 
