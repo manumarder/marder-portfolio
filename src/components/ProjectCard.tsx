@@ -38,12 +38,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <>
       <div className="group p-6 bg-white border border-slate-200/80 rounded-2xl shadow-2xl shadow-slate-100/40 hover:border-emerald-500/40 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
         <div>
-          <div className="flex items-center justify-between mb-3">
-            <span className={`text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${categoryColors[project.category]}`}>
+          {/* Reemplazar este div contenedor de badges dentro de src/components/ProjectCard.tsx */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-y-2 gap-x-4 mb-4">
+            <span className={`text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full border self-start ${categoryColors[project.category]}`}>
               {project.category === 'fullstack' ? 'Full-Stack Development' : project.category === 'data' ? 'Data Engineering' : 'UI/UX & Frontend'}
             </span>
             {project.subtitle && (
-              <span className="text-xs text-slate-400 font-light italic">{project.subtitle}</span>
+              <span className="text-xs text-slate-400 font-light italic self-start sm:self-auto tracking-wide">
+                {project.subtitle}
+              </span>
             )}
           </div>
           
